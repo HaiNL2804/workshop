@@ -1,0 +1,40 @@
+++npm create vite@latest FA24 -- --template react-ts
+++npm i
+++npm install -D tailwindcss postcss autoprefixer
+++npx tailwindcss init -p
+++y
+
+++ \*\* Thêm vào tailwind.config.js
+
+        /** @type {import('tailwindcss').Config} _/
+        export default {
+        content: [
+        "./index.html",
+        "./src/\*\*/_.{js,ts,jsx,tsx}",
+        ],
+        theme: {
+        extend: {},
+        },
+        plugins: [],
+        }
+
+\*Tiếp tục thêm index.css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+++ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+++npm run dev
+++APp.tsx:
+export default function App() {
+return (
+
+<h1 className="text-3xl font-bold underline">
+Hello world!
+</h1>
+)
+}
+++npm i react-router-dom
+<!-- icon -->
+++npm install react-icons --save
