@@ -38,3 +38,4 @@ Hello world!
 ++npm i react-router-dom
 <!-- icon -->
 ++npm install react-icons --save
+cd npm i mongoose o BE

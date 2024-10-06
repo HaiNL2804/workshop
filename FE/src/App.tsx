@@ -13,6 +13,7 @@ import ProductDetailpage from "./pages/(website)/product_detail/page";
 import CartPage from "./pages/(website)/cart/page";
 import PaymentPage from "./pages/(website)/payment/page";
 import AboutPage from "./pages/(website)/about/page";
+import AdminProductsPage from "./pages/(admin)/products/page";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="admin" element={<LayoutAdmin />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="products" element={<AdminProductsPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
